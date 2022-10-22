@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8ZH-L1-w8F">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign InVC-->
+        <scene sceneID="Qgk-53-Ax8">
+            <objects>
+                <viewController id="fHh-ii-xc2" customClass="SignInVC" customModule="LovelyAnimalsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9VD-bR-57X">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6jO-jP-FH1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qRa-zQ-Kin"/>
+                    <connections>
+                        <segue destination="8ZH-L1-w8F" kind="presentation" identifier="toMainPageVC" modalPresentationStyle="fullScreen" id="0VP-t9-Ked"/>
+                        <segue destination="OsS-O5-eKJ" kind="presentation" identifier="toSignUpVC" id="sVD-EM-2se"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vLu-K4-7vU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1103" y="90"/>
+        </scene>
+        <!--Sign Up-->
+        <scene sceneID="Zlg-aG-81c">
+            <objects>
+                <viewController id="OsS-O5-eKJ" customClass="SignUpVC" customModule="LovelyAnimalsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QZc-K7-9HU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="P5p-4X-QWR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sign Up" leftItemsSupplementBackButton="YES" id="Rgh-2q-jci"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Ta-9G-cVn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1103" y="846"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="UL6-Sd-nDM">
+            <objects>
+                <viewController id="okV-so-icw" customClass="ProfileVC" customModule="LovelyAnimalsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uQN-M0-irQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Wv0-Pa-3fh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.crop.circle" catalog="system" id="Mik-Mt-xP9"/>
+                    <connections>
+                        <segue destination="Xck-7s-9je" kind="presentation" identifier="toSignInVC" modalPresentationStyle="fullScreen" id="oKK-I0-RfB"/>
+                        <segue destination="6zN-XV-Zym" kind="presentation" identifier="toSettingsVC" id="KMd-lq-blY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O1f-ee-tJT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2012" y="846"/>
+        </scene>
+        <!--SettingsVC-->
+        <scene sceneID="6Oh-2G-2Ue">
+            <objects>
+                <viewController id="6zN-XV-Zym" customClass="SettingsVC" customModule="LovelyAnimalsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5rk-WI-SSq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ZWp-dl-ViS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fom-Am-apb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2945" y="846"/>
+        </scene>
+        <!--Post-->
+        <scene sceneID="VSF-qr-cvd">
+            <objects>
+                <viewController id="U3H-j1-tcS" customClass="PostVC" customModule="LovelyAnimalsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mT1-6e-vuV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="R4L-jE-Fec"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Post" image="photo.circle" catalog="system" id="hYl-J0-86R"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iMb-cz-3u3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2944.9275362318845" y="89.732142857142847"/>
+        </scene>
+        <!--Main Page-->
+        <scene sceneID="Rqg-F8-PmE">
+            <objects>
+                <viewController id="CbK-9I-irs" customClass="MainPageVC" customModule="LovelyAnimalsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qkM-QX-NmL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="COG-8R-fZw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Main Page" image="house" catalog="system" id="Ubu-W9-KGT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dGv-C9-YoR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2011.594202898551" y="-601.33928571428567"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="eu0-Jh-PPr">
+            <objects>
+                <tabBarController id="8ZH-L1-w8F" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0bc-mG-4Wq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="1" green="0.42960535827445301" blue="0.069676393689341642" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="CbK-9I-irs" kind="relationship" relationship="viewControllers" id="yRQ-cY-m9y"/>
+                        <segue destination="U3H-j1-tcS" kind="relationship" relationship="viewControllers" id="axc-sE-PEF"/>
+                        <segue destination="okV-so-icw" kind="relationship" relationship="viewControllers" id="NZX-6N-sLm"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z5m-wK-aZZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2013.0434782608697" y="89.732142857142847"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="inU-Vg-M0b">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Xck-7s-9je" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bas-ab-bTs">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fHh-ii-xc2" kind="relationship" relationship="rootViewController" id="MWX-CM-LIX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CmH-sW-am0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-114.49275362318842" y="89.732142857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="person.crop.circle" catalog="system" width="128" height="121"/>
+        <image name="photo.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

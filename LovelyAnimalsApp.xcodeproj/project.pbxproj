@@ -1,0 +1,517 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B853AC2E8546611A86CE2794 /* Pods_LovelyAnimalsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE3193327B7886AFDE5AAC2 /* Pods_LovelyAnimalsApp.framework */; };
+		C08F397828FCF98D001948AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08F397728FCF98D001948AD /* AppDelegate.swift */; };
+		C08F397A28FCF98D001948AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08F397928FCF98D001948AD /* SceneDelegate.swift */; };
+		C08F397C28FCF98D001948AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08F397B28FCF98D001948AD /* ViewController.swift */; };
+		C08F397F28FCF98D001948AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C08F397D28FCF98D001948AD /* Main.storyboard */; };
+		C08F398128FCF98F001948AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C08F398028FCF98F001948AD /* Assets.xcassets */; };
+		C08F398428FCF98F001948AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C08F398228FCF98F001948AD /* LaunchScreen.storyboard */; };
+		C0DB03A42903CA8800A214AC /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DB03A32903CA8800A214AC /* UIViewExtension.swift */; };
+		C0F5B57B28FDB33900653EA5 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F5B57A28FDB33900653EA5 /* DataService.swift */; };
+		C0F5B57E28FDB4BC00653EA5 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F5B57D28FDB4BC00653EA5 /* Common.swift */; };
+		C0F5B58028FDB66A00653EA5 /* MainPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F5B57F28FDB66A00653EA5 /* MainPageVC.swift */; };
+		C0F5B58228FDB67A00653EA5 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F5B58128FDB67A00653EA5 /* PostVC.swift */; };
+		C0F5B58428FDB69600653EA5 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F5B58328FDB69600653EA5 /* ProfileVC.swift */; };
+		C0F5B58628FDB6A800653EA5 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F5B58528FDB6A800653EA5 /* SettingsVC.swift */; };
+		C0F5B58828FDB6B800653EA5 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F5B58728FDB6B800653EA5 /* SignInVC.swift */; };
+		C0F5B58A28FDB6C700653EA5 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F5B58928FDB6C700653EA5 /* SignUpVC.swift */; };
+		C0F5B58C28FDB70C00653EA5 /* MainPageCellVCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F5B58B28FDB70C00653EA5 /* MainPageCellVCTableViewCell.swift */; };
+		C0F5B59028FDBB2F00653EA5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C0F5B58F28FDBB2F00653EA5 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2AE3193327B7886AFDE5AAC2 /* Pods_LovelyAnimalsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LovelyAnimalsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A14818623DF4DEE824135DF /* Pods-LovelyAnimalsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LovelyAnimalsApp.debug.xcconfig"; path = "Target Support Files/Pods-LovelyAnimalsApp/Pods-LovelyAnimalsApp.debug.xcconfig"; sourceTree = "<group>"; };
+		8294763BE3236B06DD8FD1F1 /* Pods-LovelyAnimalsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LovelyAnimalsApp.release.xcconfig"; path = "Target Support Files/Pods-LovelyAnimalsApp/Pods-LovelyAnimalsApp.release.xcconfig"; sourceTree = "<group>"; };
+		C08F397428FCF98D001948AD /* LovelyAnimalsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LovelyAnimalsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C08F397728FCF98D001948AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C08F397928FCF98D001948AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C08F397B28FCF98D001948AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C08F397E28FCF98D001948AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C08F398028FCF98F001948AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C08F398328FCF98F001948AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C08F398528FCF98F001948AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0DB03A32903CA8800A214AC /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		C0F5B57A28FDB33900653EA5 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		C0F5B57D28FDB4BC00653EA5 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		C0F5B57F28FDB66A00653EA5 /* MainPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageVC.swift; sourceTree = "<group>"; };
+		C0F5B58128FDB67A00653EA5 /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
+		C0F5B58328FDB69600653EA5 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		C0F5B58528FDB6A800653EA5 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		C0F5B58728FDB6B800653EA5 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		C0F5B58928FDB6C700653EA5 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		C0F5B58B28FDB70C00653EA5 /* MainPageCellVCTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageCellVCTableViewCell.swift; sourceTree = "<group>"; };
+		C0F5B58F28FDBB2F00653EA5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C08F397128FCF98D001948AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B853AC2E8546611A86CE2794 /* Pods_LovelyAnimalsApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B755A90B53D4574D0E05B0A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A14818623DF4DEE824135DF /* Pods-LovelyAnimalsApp.debug.xcconfig */,
+				8294763BE3236B06DD8FD1F1 /* Pods-LovelyAnimalsApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C08F396B28FCF98D001948AD = {
+			isa = PBXGroup;
+			children = (
+				C08F397628FCF98D001948AD /* LovelyAnimalsApp */,
+				C08F397528FCF98D001948AD /* Products */,
+				6B755A90B53D4574D0E05B0A /* Pods */,
+				F56A0A5A75C4BA59041248AB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C08F397528FCF98D001948AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C08F397428FCF98D001948AD /* LovelyAnimalsApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C08F397628FCF98D001948AD /* LovelyAnimalsApp */ = {
+			isa = PBXGroup;
+			children = (
+				C0F5B57C28FDB4A000653EA5 /* Helpers */,
+				C0F5B57928FDB31D00653EA5 /* Services */,
+				C0AC683A28FD83FD0058BE91 /* Delegates */,
+				C0AC683928FD83BF0058BE91 /* Controllers */,
+				C0AC683828FD83810058BE91 /* Views */,
+				C08F398028FCF98F001948AD /* Assets.xcassets */,
+				C08F398528FCF98F001948AD /* Info.plist */,
+				C0F5B58F28FDBB2F00653EA5 /* GoogleService-Info.plist */,
+			);
+			path = LovelyAnimalsApp;
+			sourceTree = "<group>";
+		};
+		C0AC683828FD83810058BE91 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C08F397D28FCF98D001948AD /* Main.storyboard */,
+				C08F398228FCF98F001948AD /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C0AC683928FD83BF0058BE91 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C08F397B28FCF98D001948AD /* ViewController.swift */,
+				C0F5B57F28FDB66A00653EA5 /* MainPageVC.swift */,
+				C0F5B58B28FDB70C00653EA5 /* MainPageCellVCTableViewCell.swift */,
+				C0F5B58128FDB67A00653EA5 /* PostVC.swift */,
+				C0F5B58328FDB69600653EA5 /* ProfileVC.swift */,
+				C0F5B58528FDB6A800653EA5 /* SettingsVC.swift */,
+				C0F5B58728FDB6B800653EA5 /* SignInVC.swift */,
+				C0F5B58928FDB6C700653EA5 /* SignUpVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C0AC683A28FD83FD0058BE91 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				C08F397728FCF98D001948AD /* AppDelegate.swift */,
+				C08F397928FCF98D001948AD /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		C0F5B57928FDB31D00653EA5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C0F5B57A28FDB33900653EA5 /* DataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C0F5B57C28FDB4A000653EA5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C0F5B57D28FDB4BC00653EA5 /* Common.swift */,
+				C0DB03A32903CA8800A214AC /* UIViewExtension.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F56A0A5A75C4BA59041248AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2AE3193327B7886AFDE5AAC2 /* Pods_LovelyAnimalsApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C08F397328FCF98D001948AD /* LovelyAnimalsApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C08F398828FCF98F001948AD /* Build configuration list for PBXNativeTarget "LovelyAnimalsApp" */;
+			buildPhases = (
+				20D69423CD1F532B337CB4E6 /* [CP] Check Pods Manifest.lock */,
+				C08F397028FCF98D001948AD /* Sources */,
+				C08F397128FCF98D001948AD /* Frameworks */,
+				C08F397228FCF98D001948AD /* Resources */,
+				D7B4BB3706888E6D51368919 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LovelyAnimalsApp;
+			productName = LovelyAnimalsApp;
+			productReference = C08F397428FCF98D001948AD /* LovelyAnimalsApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C08F396C28FCF98D001948AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					C08F397328FCF98D001948AD = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = C08F396F28FCF98D001948AD /* Build configuration list for PBXProject "LovelyAnimalsApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C08F396B28FCF98D001948AD;
+			productRefGroup = C08F397528FCF98D001948AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C08F397328FCF98D001948AD /* LovelyAnimalsApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C08F397228FCF98D001948AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C08F398428FCF98F001948AD /* LaunchScreen.storyboard in Resources */,
+				C0F5B59028FDBB2F00653EA5 /* GoogleService-Info.plist in Resources */,
+				C08F398128FCF98F001948AD /* Assets.xcassets in Resources */,
+				C08F397F28FCF98D001948AD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20D69423CD1F532B337CB4E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LovelyAnimalsApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7B4BB3706888E6D51368919 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LovelyAnimalsApp/Pods-LovelyAnimalsApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LovelyAnimalsApp/Pods-LovelyAnimalsApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LovelyAnimalsApp/Pods-LovelyAnimalsApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C08F397028FCF98D001948AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0F5B58028FDB66A00653EA5 /* MainPageVC.swift in Sources */,
+				C08F397C28FCF98D001948AD /* ViewController.swift in Sources */,
+				C08F397828FCF98D001948AD /* AppDelegate.swift in Sources */,
+				C0F5B58A28FDB6C700653EA5 /* SignUpVC.swift in Sources */,
+				C08F397A28FCF98D001948AD /* SceneDelegate.swift in Sources */,
+				C0F5B58828FDB6B800653EA5 /* SignInVC.swift in Sources */,
+				C0F5B58428FDB69600653EA5 /* ProfileVC.swift in Sources */,
+				C0F5B58228FDB67A00653EA5 /* PostVC.swift in Sources */,
+				C0F5B57E28FDB4BC00653EA5 /* Common.swift in Sources */,
+				C0DB03A42903CA8800A214AC /* UIViewExtension.swift in Sources */,
+				C0F5B57B28FDB33900653EA5 /* DataService.swift in Sources */,
+				C0F5B58C28FDB70C00653EA5 /* MainPageCellVCTableViewCell.swift in Sources */,
+				C0F5B58628FDB6A800653EA5 /* SettingsVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C08F397D28FCF98D001948AD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C08F397E28FCF98D001948AD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C08F398228FCF98F001948AD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C08F398328FCF98F001948AD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C08F398628FCF98F001948AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C08F398728FCF98F001948AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C08F398928FCF98F001948AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A14818623DF4DEE824135DF /* Pods-LovelyAnimalsApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H3LG7777TR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LovelyAnimalsApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.berksan.LovelyAnimalsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C08F398A28FCF98F001948AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8294763BE3236B06DD8FD1F1 /* Pods-LovelyAnimalsApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H3LG7777TR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LovelyAnimalsApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.berksan.LovelyAnimalsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C08F396F28FCF98D001948AD /* Build configuration list for PBXProject "LovelyAnimalsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C08F398628FCF98F001948AD /* Debug */,
+				C08F398728FCF98F001948AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C08F398828FCF98F001948AD /* Build configuration list for PBXNativeTarget "LovelyAnimalsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C08F398928FCF98F001948AD /* Debug */,
+				C08F398A28FCF98F001948AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C08F396C28FCF98D001948AD /* Project object */;
+}
