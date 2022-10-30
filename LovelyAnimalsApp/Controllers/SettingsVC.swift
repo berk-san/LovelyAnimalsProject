@@ -21,7 +21,7 @@ class SettingsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         settingsTableView.dataSource = self
         
         settingsTableView.register(UITableViewCell.self, forCellReuseIdentifier: "cellID")
-        // Do any additional setup after loading the view.
+        
     }
     
     
@@ -35,6 +35,8 @@ class SettingsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             settingsTableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             settingsTableView.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor)
         ])
+        
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -53,21 +55,7 @@ class SettingsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         var cellHeight: CGFloat = CGFloat()
-        cellHeight = 200
+        cellHeight = 50
         return cellHeight
     }
-    
-    
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

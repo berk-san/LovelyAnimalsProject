@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseFirestore
 
 class MainPageCellVCTableViewCell: UITableViewCell {
     
@@ -14,6 +15,7 @@ class MainPageCellVCTableViewCell: UITableViewCell {
     var commentLabel = UILabel()
     var likeLabel = UILabel()
     var likeButton = UIButton()
+    var documentIDLabel = UILabel()
     
     var isLiked = Bool()
     
@@ -39,6 +41,9 @@ class MainPageCellVCTableViewCell: UITableViewCell {
         addSubview(likeButton)
         configureLikeButton()
         setLikeButtonConstraints()
+        
+        addSubview(documentIDLabel)
+        
     }
     
     required init?(coder: NSCoder) {
@@ -46,8 +51,12 @@ class MainPageCellVCTableViewCell: UITableViewCell {
     }
     
     func setCell() {
-        userEmailLabel.text = "Shared by: user@email.com"
-        commentLabel.text = "My comment"
+        self.configureUserEmailLabel()
+        self.configureUserImageView()
+        self.configureCommentLabel()
+        self.configureLikeLabel()
+        self.configureLikeButton()
+        self.configureDocumentIDLabel()
     }
     
     func configureUserEmailLabel() {
@@ -63,7 +72,7 @@ class MainPageCellVCTableViewCell: UITableViewCell {
     }
     
     func configureUserImageView() {
-        userImageView.image = UIImage(named: "select.png")
+//        userImageView.image = UIImage(named: "select.png")
     }
     
     func setUserImageViewConstraints() {
@@ -75,6 +84,7 @@ class MainPageCellVCTableViewCell: UITableViewCell {
     }
     
     func configureCommentLabel() {
+//        commentLabel.text = "My comment"
         commentLabel.numberOfLines = 0
     }
     
@@ -87,7 +97,7 @@ class MainPageCellVCTableViewCell: UITableViewCell {
     }
     
     func configureLikeLabel() {
-        likeLabel.text = "Likes: 0"
+//        likeLabel.text = "Likes: 0"
     }
     
     func setLikeLabelConstraints() {
@@ -101,6 +111,8 @@ class MainPageCellVCTableViewCell: UITableViewCell {
     func configureLikeButton() {
         likeButton.setImage(.init(systemName: isLiked ? "heart.fill" : "heart"), for: .normal)
         likeButton.tintColor = .systemRed
+        likeButton.isUserInteractionEnabled = true
+        likeButton.addTarget(self, action: #selector(likeButtonTapped), for: .touchUpInside)
     }
     
     func setLikeButtonConstraints() {
@@ -110,6 +122,29 @@ class MainPageCellVCTableViewCell: UITableViewCell {
         likeButton.leadingAnchor.constraint(equalTo: userImageView.leadingAnchor).isActive = true
         likeButton.widthAnchor.constraint(greaterThanOrEqualTo: likeButton.widthAnchor).isActive = true
         likeButton.bottomAnchor.constraint(equalTo:commentLabel.topAnchor, constant: -10).isActive = true
+    }
+    
+    func configureDocumentIDLabel() {
+//        commentLabel.text = "My comment"
+        documentIDLabel.numberOfLines = 0
+    }
+    
+    func setDocumentIDLabel() {
+        documentIDLabel.translatesAutoresizingMaskIntoConstraints = false
+        documentIDLabel.heightAnchor.constraint(greaterThanOrEqualToConstant: documentIDLabel.contentScaleFactor).isActive = true
+        documentIDLabel.leadingAnchor.constraint(equalTo: userImageView.leadingAnchor).isActive = true
+        documentIDLabel.widthAnchor.constraint(greaterThanOrEqualToConstant: documentIDLabel.contentScaleFactor).isActive = true
+        documentIDLabel.bottomAnchor.constraint(equalTo: layoutMarginsGuide.bottomAnchor, constant: 10).isActive = true
+        documentIDLabel.isHidden = true
+    }
+    
+    @objc func likeButtonTapped() {
+        let firestoreDatabase = Firestore.firestore()
+        if let likeCount = Int(likeLabel.text!) {
+            let likeStore = ["likes" : likeCount + 1] as [String : Any]
+            firestoreDatabase.collection("Posts").document(documentIDLabel.text!).setData(likeStore, merge: true)
+        }
+        print("Like button tapped")
     }
 
 }

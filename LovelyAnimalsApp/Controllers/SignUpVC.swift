@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SignUpVC: UIViewController {
     
@@ -34,7 +35,7 @@ class SignUpVC: UIViewController {
         closeButton.configuration = .plain()
         closeButton.setTitleColor(colorOrange, for: .normal)
         closeButton.setTitle("Close", for: .normal)
-        closeButton.addTarget(self, action: #selector(goToSignInVC), for: .touchUpInside)
+        closeButton.addTarget(self, action: #selector(returnSignInVC), for: .touchUpInside)
         view.addSubview(closeButton)
         
         emailLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -131,10 +132,28 @@ class SignUpVC: UIViewController {
         ])
     }
     
+    @objc func returnSignInVC() {
+        dismiss(animated: true, completion: nil)
+    }
+    
     @objc func goToSignInVC() {
-        
-        // Hata kontrolü yapılacak ve giriş başarılı alert'i gösterildikten sonra giriş ekranına dönüyoruz.
-        self.dismiss(animated: true)
+        if emailText.text != "" && passwordText.text != "" && confirmPasswordText.text != "" && passwordText.text == confirmPasswordText.text {
+            Auth.auth().createUser(withEmail: emailText.text!, password: passwordText.text!) { authdata, error in
+                if error != nil {
+                    Common.showAlert(title: "Error", message: error?.localizedDescription ?? "Please check email and password", vc: self)
+                } else {
+                    let alert = UIAlertController(title: "Success", message: "You created a new account", preferredStyle: .alert)
+                    let okButton = UIAlertAction(title: "OK", style: .default) { action in
+                        self.dismiss(animated: true)
+                    }
+                    alert.addAction(okButton)
+                    self.present(alert, animated: true, completion: nil)
+                }
+            }
+            
+        } else {
+            Common.showAlert(title: "Error", message: "Check your email address and password", vc: self)
+        }
     }
     
 }

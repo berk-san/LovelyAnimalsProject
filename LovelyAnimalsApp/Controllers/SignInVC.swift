@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SignInVC: UIViewController {
     
@@ -89,7 +90,7 @@ class SignInVC: UIViewController {
         signInButton.tintColor = colorOrange
         signInButton.setTitleColor(.white, for: .normal)
         signInButton.setTitle("SIGN IN", for: .normal)
-        signInButton.addTarget(self, action: #selector(toMainPageVC), for: .touchUpInside)
+        signInButton.addTarget(self, action: #selector(goToMainPageVC), for: .touchUpInside)
         view.addSubview(signInButton)
         
         signUpButton.translatesAutoresizingMaskIntoConstraints = false
@@ -132,8 +133,18 @@ class SignInVC: UIViewController {
         ])
     }
     
-    @objc func toMainPageVC() {
-        performSegue(withIdentifier: "toMainPageVC", sender: nil)
+    @objc func goToMainPageVC() {
+        if emailText.text != nil && passwordText.text != nil {
+            Auth.auth().signIn(withEmail: emailText.text!, password: passwordText.text!) { authdata, error in
+                if error != nil {
+                    Common.showAlert(title: "Error", message: error?.localizedDescription ?? "Check your email address and password", vc: self)
+                } else {
+                    self.performSegue(withIdentifier: "toMainPageVC", sender: nil)
+                }
+            }
+        } else {
+            Common.showAlert(title: "Error", message: "Check your email address and password", vc: self)
+        }
     }
     
     @objc func goToSignUpVC() {

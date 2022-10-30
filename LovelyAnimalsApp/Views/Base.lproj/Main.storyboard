@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8ZH-L1-w8F">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xck-7s-9je">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -58,6 +58,7 @@
                     <connections>
                         <segue destination="Xck-7s-9je" kind="presentation" identifier="toSignInVC" modalPresentationStyle="fullScreen" id="oKK-I0-RfB"/>
                         <segue destination="6zN-XV-Zym" kind="presentation" identifier="toSettingsVC" id="KMd-lq-blY"/>
+                        <segue destination="fHh-ii-xc2" kind="presentation" identifier="logout" modalPresentationStyle="fullScreen" id="xf8-lB-Duh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O1f-ee-tJT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -82,7 +83,7 @@
         <!--Post-->
         <scene sceneID="VSF-qr-cvd">
             <objects>
-                <viewController id="U3H-j1-tcS" customClass="PostVC" customModule="LovelyAnimalsApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="post" id="U3H-j1-tcS" customClass="PostVC" customModule="LovelyAnimalsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mT1-6e-vuV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -114,7 +115,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="eu0-Jh-PPr">
             <objects>
-                <tabBarController id="8ZH-L1-w8F" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBar" id="8ZH-L1-w8F" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0bc-mG-4Wq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -150,6 +151,9 @@
             <point key="canvasLocation" x="-114.49275362318842" y="89.732142857142847"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="xf8-lB-Duh"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="person.crop.circle" catalog="system" width="128" height="121"/>

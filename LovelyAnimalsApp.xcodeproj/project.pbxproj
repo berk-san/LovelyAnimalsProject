@@ -133,7 +133,6 @@
 		C0AC683A28FD83FD0058BE91 /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
-				C08F397728FCF98D001948AD /* AppDelegate.swift */,
 				C08F397928FCF98D001948AD /* SceneDelegate.swift */,
 			);
 			path = Delegates;
@@ -142,6 +141,7 @@
 		C0F5B57928FDB31D00653EA5 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				C08F397728FCF98D001948AD /* AppDelegate.swift */,
 				C0F5B57A28FDB33900653EA5 /* DataService.swift */,
 			);
 			path = Services;
